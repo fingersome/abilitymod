@@ -1,0 +1,16 @@
+[
+{
+  "modid": "abilitymod",
+  "name": "Ability Mod",
+  "description": "A mod that adds DnD ability Scores to minecraft!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Fingersome"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
