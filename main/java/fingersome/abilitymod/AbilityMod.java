@@ -4,6 +4,7 @@ import fingersome.abilitymod.command.CommandAbilityQuery;
 import fingersome.abilitymod.config.ConfigManager;
 import fingersome.abilitymod.entity.capability.CapabilityHandler;
 import fingersome.abilitymod.event.EventManager;
+import fingersome.abilitymod.item.ItemList;
 import fingersome.abilitymod.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
@@ -27,7 +28,7 @@ public class AbilityMod
     			serverSide = "fingersome.abilitymod.proxy.ServerProxy")
 
 	public static CommonProxy proxy;
-	//public static ItemList items;
+	public static ItemList items;
 
 	@Instance(ModInfo.MODID)
 	public static AbilityMod instance;
@@ -41,7 +42,7 @@ public class AbilityMod
 		@Override
 		@SideOnly(Side.CLIENT)
 		public ItemStack getTabIconItem() {
-			return new ItemStack(Items.APPLE,1);
+			return new ItemStack(ItemList.itemTome,1);
 		}
 	};
 	
@@ -56,7 +57,7 @@ public class AbilityMod
 		
 	    ConfigManager.init(event.getSuggestedConfigurationFile());
 	   
-	 	//items.init();
+	 	items.init();
 		proxy.preInit(event);
 	     
 	 }

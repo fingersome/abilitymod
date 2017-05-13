@@ -1,5 +1,6 @@
 package fingersome.abilitymod.proxy;
 
+import fingersome.abilitymod.item.ItemList;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -17,8 +18,7 @@ public class ClientProxy extends CommonProxy{
 	@Override
 	public void init(FMLInitializationEvent event) {
 		
-		//ItemList.registerRenders();
-
+		ItemList.registerRenders();
 		super.init(event);
 	}
 	

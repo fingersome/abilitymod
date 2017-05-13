@@ -2,9 +2,7 @@
 itemGroup.abilitymod=Ability Mod
 #
 # Baubles
-item.item_amulet_str.name=Amulet of Strength
-item.item_amulet_dex.name=Amulet of Dexterity
-item.item_amulet_con.name=Amulet of Constitution
+item.item_ring_str.name=Ring of Strength
 #
 # Items
 item.item_ability_tome.name=Ability Tome

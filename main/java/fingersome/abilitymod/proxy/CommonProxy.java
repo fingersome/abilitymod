@@ -4,6 +4,7 @@ import fingersome.abilitymod.entity.capability.AbilityCha;
 import fingersome.abilitymod.entity.capability.AbilityCon;
 import fingersome.abilitymod.entity.capability.AbilityDex;
 import fingersome.abilitymod.entity.capability.AbilityInt;
+import fingersome.abilitymod.entity.capability.AbilityScore;
 import fingersome.abilitymod.entity.capability.AbilityStorage;
 import fingersome.abilitymod.entity.capability.AbilityStr;
 import fingersome.abilitymod.entity.capability.AbilityWis;

@@ -1,6 +1,4 @@
-package fingersome.abilitymod.proxy;
-
-import fingersome.abilitymod.entity.capability.IAbilityScore;
+package fingersome.abilitymod.entity.capability;
 
 public class AbilityScore implements IAbilityScore{
 
