@@ -20,7 +20,7 @@ public class ItemTome extends Item {
 
     @Override
     public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced) {
-        //tooltip.add("Used for smithing arms and armor");
+        tooltip.add("Debug item, used to view your character's ability scores");
         super.addInformation(stack, playerIn, tooltip, advanced);
     }
 

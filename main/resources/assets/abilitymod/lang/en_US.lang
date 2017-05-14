@@ -3,6 +3,11 @@ itemGroup.abilitymod=Ability Mod
 #
 # Baubles
 item.item_ring_str.name=Ring of Strength
+item.item_ring_dex.name=Ring of Dexterity
+item.item_ring_con.name=Ring of Constitution
+item.item_ring_int.name=Ring of Intellect
+item.item_ring_wis.name=Ring of Wisdom
+item.item_ring_cha.name=Ring of Charisma
 #
 # Items
 item.item_ability_tome.name=Ability Tome

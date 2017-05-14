@@ -8,7 +8,6 @@ import baubles.api.IBauble;
 import baubles.api.cap.IBaublesItemHandler;
 import fingersome.abilitymod.AbilityMod;
 import fingersome.abilitymod.ModInfo;
-import fingersome.abilitymod.entity.capability.AbilityStr;
 import fingersome.abilitymod.item.ItemInfo;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -25,9 +24,9 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
-public class ItemRingStr extends ItemBaublesRing {
+public class ItemRingDex extends ItemBaublesRing {
 
-	 public ItemRingStr(String name, boolean addToTab) {
+	 public ItemRingDex(String name, boolean addToTab) {
 		super(name, addToTab);
         setUnlocalizedName(name);
         setCreativeTab(AbilityMod.tab);
@@ -36,7 +35,7 @@ public class ItemRingStr extends ItemBaublesRing {
 
 	 	@Override
 	    public void addInformation(ItemStack stack, EntityPlayer player, List<String> tooltip, boolean advanced) {
-	        tooltip.add("+1 Strength");
+	        tooltip.add("+1 Dexterity");
 	        super.addInformation(stack, player, tooltip, advanced);
 	    }
  
@@ -61,7 +60,7 @@ public class ItemRingStr extends ItemBaublesRing {
 		public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
 
 		}
-				
+
 		@Override
 		public boolean hasEffect(ItemStack stack) {
 			return false;
@@ -75,19 +74,17 @@ public class ItemRingStr extends ItemBaublesRing {
 		@Override
 		public void onEquipped(ItemStack itemstack, EntityLivingBase player) {
 			player.playSound(SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, .75F, 1.9f);
-			
 		}
 
 		@Override
 		public void onUnequipped(ItemStack itemstack, EntityLivingBase player) {
 			player.playSound(SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, .75F, 2f);
-
 		}
 
 	    
 		public static void registerRender(Item item) {
 
-	        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(ModInfo.MODID + ":" + ItemInfo.ITEM_RING_STR_UNLOCALIZED, "inventory"));		
+	        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(ModInfo.MODID + ":" + ItemInfo.ITEM_RING_DEX_UNLOCALIZED, "inventory"));		
 		}
 
 }
